@@ -1,4 +1,4 @@
-# Proyek Analisis Data: Air Quality Dataset
+# Air Quality Dashboard ✨
 
 ## Aotizhongxin Station, Beijing (2013–2017)
 
@@ -6,7 +6,7 @@
 
 ## Deskripsi Proyek
 
-Proyek ini merupakan submission akhir dari program **Dicoding Coding Camp 2026** (Data Scientist Track).
+Proyek ini merupakan submission akhir dari materi analisis data.
 Proyek ini melakukan analisis mendalam terhadap data kualitas udara dari stasiun pemantau
 Aotizhongxin, Beijing, untuk menjawab dua pertanyaan bisnis utama terkait pola polusi PM2.5
 dan pengaruh kondisi cuaca terhadap kualitas udara.
@@ -37,19 +37,29 @@ submission
 
 ---
 
-## Setup Environment
+## Setup Environment - Anaconda
 
-Install semua dependensi yang dibutuhkan:
+```
+conda create --name main-ds python=3.9
+conda activate main-ds
+pip install -r requirements.txt
+```
 
-```bash
+## Setup Environment - Shell/Terminal
+
+```
+mkdir proyek_analisis_data
+cd proyek_analisis_data
+pipenv install
+pipenv shell
 pip install -r requirements.txt
 ```
 
 ---
 
-## Menjalankan Dashboard
+## Run Streamlit App
 
-```bash
+```
 cd dashboard
 streamlit run dashboard.py
 ```
