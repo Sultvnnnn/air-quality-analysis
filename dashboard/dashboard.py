@@ -144,39 +144,3 @@ plt.tight_layout()
 
 st.pyplot(fig3)
 st.caption("Nilai mendekati 1 atau -1 menunjukkan korelasi kuat. Mendekati 0 berarti tidak ada korelasi signifikan.")
-
-st.divider()
-
-# KESIMPULAN
-st.subheader("📝 Kesimpulan")
-
-st.info("""
-**Pertanyaan 1:** Polusi PM2.5 membentuk pola musiman yang konsisten. Puncak polusi terjadi di bulan 
-Desember dan terendah di bulan Agustus. Otoritas terkait perlu menyiapkan langkah preventif 
-di periode November–Januari setiap tahunnya.
-""")
-
-st.info("""
-**Pertanyaan 2:** Kecepatan angin (WSPM) adalah faktor cuaca paling berpengaruh dalam menurunkan 
-konsentrasi PM2.5 (korelasi -0.275). Sebaliknya, curah hujan hampir tidak berpengaruh secara 
-signifikan (korelasi -0.013). Dashboard pemantauan udara sebaiknya diintegrasikan dengan 
-data kecepatan angin real-time.
-""")
-
-st.divider()
-
-st.subheader("💡 Rekomendasi Action Item")
-
-st.success("""
-**1. Peringatan Dini Berbasis Musim**  
-Jadikan November–Januari sebagai periode siaga tinggi. Fokuskan alokasi sumber daya seperti 
-pembagian masker, kampanye kesehatan paru-paru, dan pengetatan emisi industri pada bulan-bulan 
-puncak polusi (terutama Desember).
-""")
-
-st.success("""
-**2. Sistem Peringatan Terintegrasi Cuaca**  
-Dashboard pemantauan kualitas udara publik harus diintegrasikan secara real-time dengan sensor 
-kecepatan angin. Jika angin diprediksi stagnan dalam beberapa hari ke depan, sistem dapat 
-otomatis merilis peringatan ancaman lonjakan PM2.5.
-""")
